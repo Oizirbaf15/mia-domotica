@@ -24,7 +24,7 @@ pin = st.sidebar.text_input("Inserisci PIN", type="password")
 
 if pin == st.secrets["MY_PIN"]:
     st.sidebar.success("Accesso Autorizzato")
-    if st.button("🛋️ Accendi Salotto", use_container_width=True):
-        trigger_monkey("luce_salotto") # <--- Scrivi qui il nome esatto del tuo Trigger
+    if st.button("🛋️ Accendi abatjour", use_container_width=True):
+        trigger_monkey("abatjour") # <--- Scrivi qui il nome esatto del tuo Trigger
 else:
     st.info("Inserisci il PIN per sbloccare i comandi.")
